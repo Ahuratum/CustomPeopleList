@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A84C7FB"
+    tools:context=".EditPerson">
+
+    <Button
+        android:id="@+id/btn_confirmCancel"
+        android:layout_width="158dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Cancel"
+        app:backgroundTint="#FF9A7A"
+        app:cornerRadius="15dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_confirmAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tv_addPersonId" />
+
+    <Button
+        android:id="@+id/btn_confirmAdd"
+        android:layout_width="158dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Add Person"
+        app:backgroundTint="#FF9A7A"
+        app:cornerRadius="15dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_addPersonId" />
+
+    <EditText
+        android:id="@+id/et_addPersonPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:textColorHint="#FF9A7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addPersonAge" />
+
+    <EditText
+        android:id="@+id/et_addPersonAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter age"
+        android:inputType="number"
+        android:textColorHint="#FF9A7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addPersonName" />
+
+    <EditText
+        android:id="@+id/et_addPersonName"
+        android:layout_width="301dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter name"
+        android:inputType="textPersonName"
+        android:textColorHint="#FF9A7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <EditText
+        android:id="@+id/et_addPersonEmail"
+        android:layout_width="275dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FF9A7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addPersonPhone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:background="#A1D3FA"
+        android:editable="false"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:text="Contact Details"
+        android:textAlignment="center"
+        android:textColor="#FF9A7A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_addPersonImage"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Image URL"
+        android:inputType="textPersonName"
+        android:textColorHint="#FF9A7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addPersonEmail" />
+
+    <TextView
+        android:id="@+id/tv_addPersonId"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addPersonImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
